@@ -11,6 +11,7 @@
 </tr>
 <tr>
 <td valign="top">
+<a href="#12.22.8">12.22.8</a><br/>
 <a href="#12.22.7">12.22.7</a><br/>
 <a href="#12.22.6">12.22.6</a><br/>
 <a href="#12.22.5">12.22.5</a><br/>
@@ -76,6 +77,31 @@
   * [0.10.x](CHANGELOG_V010.md)
   * [io.js](CHANGELOG_IOJS.md)
   * [Archive](CHANGELOG_ARCHIVE.md)
+
+<a id="12.22.8"></a>
+
+## 2012-12-16, Version 12.22.8 'Erbium' (LTS), @richardlau
+
+### Notable Changes
+
+This release contains a c-ares update to fix a regression introduced in
+Node.js 12.22.5 resolving CNAME records containing underscores
+[#39780](https://github.com/nodejs/node/issues/39780).
+
+Root certificates have been updated to those from Mozilla's Network
+Security Services 3.71 [#40281](https://github.com/nodejs/node/pull/40280).
+
+### Commits
+
+* \[[`2d42295d2a`](https://github.com/nodejs/node/commit/2d42295d2a)] - **build**: pin macOS GitHub runner to macos-10.15 (Richard Lau) [#41124](https://github.com/nodejs/node/pull/41124)
+* \[[`f0be07796e`](https://github.com/nodejs/node/commit/f0be07796e)] - **crypto**: update root certificates (Richard Lau) [#40280](https://github.com/nodejs/node/pull/40280)
+* \[[`7feff67419`](https://github.com/nodejs/node/commit/7feff67419)] - **deps**: add -fno-strict-aliasing flag to libuv (Daniel Bevenius) [#40631](https://github.com/nodejs/node/pull/40631)
+* \[[`534ac7c7c6`](https://github.com/nodejs/node/commit/534ac7c7c6)] - **deps**: update c-ares to 1.18.1 (Richard Lau) [#40660](https://github.com/nodejs/node/pull/40660)
+* \[[`c019fa9b70`](https://github.com/nodejs/node/commit/c019fa9b70)] - **deps**: update to cjs-module-lexer\@1.2.2 (Guy Bedford) [#39402](https://github.com/nodejs/node/pull/39402)
+* \[[`b13340eff4`](https://github.com/nodejs/node/commit/b13340eff4)] - **doc**: add alternative version links to the packages page (Filip Skokan) [#36915](https://github.com/nodejs/node/pull/36915)
+* \[[`7479447d6a`](https://github.com/nodejs/node/commit/7479447d6a)] - **test**: deflake child-process-pipe-dataflow (Luigi Pinca) [#40838](https://github.com/nodejs/node/pull/40838)
+* \[[`833e199393`](https://github.com/nodejs/node/commit/833e199393)] - **tools**: update certdata.txt (Richard Lau) [#40280](https://github.com/nodejs/node/pull/40280)
+* \[[`e4339fe286`](https://github.com/nodejs/node/commit/e4339fe286)] - **tools**: add script to update c-ares (Richard Lau) [#40660](https://github.com/nodejs/node/pull/40660)
 
 <a id="12.22.7"></a>
 ## 2021-10-12, Version 12.22.7 'Erbium' (LTS), @danielleadams
